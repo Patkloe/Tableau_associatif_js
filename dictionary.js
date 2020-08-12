@@ -38,3 +38,29 @@ for (var key in arr) {
  }
 }
 testscript();
+
+
+// test
+var tab = [1,2,3,4,5,5,3,2];
+ var a = tab.length;
+ var arr = {}/*new Array()*/; 
+ alert("tab size" + " " + a);
+                                                                      //var fruits = ["apple", "orange", "cherry"];
+tab.forEach(myFunction);
+ function myFunction(item, index) {
+    arr = { item:index };                                            // document.getElementById("demo").innerHTML += index + ":" + item + "<br>"; 
+}
+//
+ //for(let i = 0; i < tab.length; i++){
+     //arr = {tab[i]:tab[i]};              //{ i:tab[i]};
+ //}
+ console.log("Keys are listed below "+"\n");
+for (var key in arr) { 
+    if (arr.hasOwnProperty(key)) { 
+  
+        // Printing Keys 
+        console.log(key + "value : " + " " + arr[key] + "\n"); 
+    } 
+ }
+}
+testscript();
